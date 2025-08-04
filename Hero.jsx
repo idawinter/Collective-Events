@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./Hero.css";
+import Navbar from "./Navbar";
 
 function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <section className="hero-container">
+      <Navbar />
 
       {/* Video Background */}
       <video autoPlay muted loop className="hero-video">
